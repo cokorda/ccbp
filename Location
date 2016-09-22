@@ -1,0 +1,47 @@
+/* Excecute this code to update/insert in THK ontology whenever the submit button is clicked */
+/*
+function thkspaceupdate($thkspaceupdate){
+		include ("thk_update.php");
+// Insert location of Region, Village, Banjar   
+//Longitude and Latitude use string and map to google maps
+    $thk_update->update(
+    	"INSERT DATA {
+		thk:$desa_desc a thk:Desa;
+			thk:isPartOf thk:$kec_desc;
+			thk:isPartOf thk:$kab_desc;
+    			thk:hasLatitude $desalatitude;
+    			thk:hasLongitude $desalongitude;
+thk:uid $uid .
+		thk:$banjar_desc a thk:Banjar;
+    			thk:isPartOf thk:$desa;
+    			thk:hasLatitude $banjarlatitude;
+    			thk:hasLongitude $banjarlongitude;
+thk:uid $uid .
+		}"
+		);
+*/
+
+/*
+function thktempleupdate($thktemplepdate){
+		include ("thk_update.php");
+// insert Pura Kahyangan Tiga
+	$thk_update->update(
+		"INSERT DATA {
+		thk:$PuraPuseh.$desa_desc a thk:PuraPuseh;
+			thk:hasLatitude $purapusehlatitude;
+			thk:hasLongitude $purapusehlongitude;
+      thk:uid $uid .
+		thk:$PuraDesa.$desa_desc a thk:PuraDesa;
+			thk:hasLatitude $puradesalatitude;
+			thk:hasLongitude $puradesalongitude;
+      thk:uid $uid .
+		thk:$PuraDalem.$desa_desc a thk:PuraDalem.
+			thk:hasLatitude $puradalemlatitude;
+			thk:hasLongitude $puradalemlongitude;
+      thk:uid $uid .
+		thk:$desa thk:hasTemple thk:$PuraPuseh.$desa_desc;
+				      thk:hasTemple thk:$PuraDesa.$desa_desc;
+				      thk:hasTemple thk:$PuraDalem.$desa_desc;
+              thk:uid $uid .
+				
+		}");
