@@ -1,4 +1,4 @@
-
+<?php
      /**
      *
      * This code will insert a location into thk ontology
@@ -22,5 +22,5 @@ EasyRdf_Namespace::set ('thk' ,  'http://dpch.oss.web.id/Bali/TriHitaKarana.owl#
 EasyRdf_Namespace::set {'vcard' , 'http://www.w3.org/2006/vcard/ns#');
 
 //Setup update connection to triple store end point
-    $thk_update = new EasyRdf_Sparql_Client('http://dpch.oss.web.id:3030/thk/update');
+    $thk_update = new EasyRdf_Sparql_Client('http://localhost:3030/thk/update');
 ?>
