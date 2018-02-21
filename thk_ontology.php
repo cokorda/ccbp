@@ -22,5 +22,5 @@
 /*
 new comments
 */
-
+// This is part of the testing patch
 ?>
